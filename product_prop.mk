@@ -42,6 +42,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     power.saving.mode=1 \
     pm.sleep_mode=1
 
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.perf.scroll_opt=true
+
 # Disable Rescue Party
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true \
