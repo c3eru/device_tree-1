@@ -24,6 +24,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.hardware.vulkan=adreno \
     vendor.display.disable_rotator_downscale=1
 
+# IORap
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.iorapd.enable=true
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=25 \
