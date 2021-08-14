@@ -292,14 +292,15 @@ service vendor.tlocd /vendor/bin/tloc_daemon
     user system
     group drmrpc gps net_raw
 
-on property:vold.decrypt=trigger_restart_framework
-   start vendor.cnss_diag
+#on property:vold.decrypt=trigger_restart_framework
+#   start vendor.cnss_diag
 
 service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -t HELIUM
    class main
    user system
    group system wifi inet sdcard_rw media_rw diag
    oneshot
+   disabled
 
 #xiong add charge_logger
 service charge_logger vendor/bin/charge_logger
