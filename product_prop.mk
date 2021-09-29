@@ -1,8 +1,3 @@
-# blurs
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.supports_background_blur=1 \
-    ro.sf.blurs_are_expensive=1
-
 # Dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
@@ -11,9 +6,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
+# Chrome flags
+PRODUCT_PROPERTY_OVERRIDES += \
+    com.android.chrome.Chrome.Flags.CachedFlag.DynamicColorAndroid=true \
+    com.android.chrome.Chrome.Flags.CachedFlag.ThemeRefactorAndroid=true
+
+# Enable blurs, hidden under dev option
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=0 \
+    persist.sys.sf.disable_blurs=0
+
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.hwui.renderer=skiagl \
+    debug.hwui.renderer=opengl \
+    debug.egl.hw=1 \
+    debug.egl.force.msaa=1 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
     ro.surface_flinger.running_without_sync_framework=true \
@@ -33,10 +40,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=25 \
     ro.config.vc_call_vol_steps=11 \
     vendor.audio.offload.buffer.size.kb=256
-
-# Always use GPU for screen compositing
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.disable_hwc_overlays=1
 
 # Power-saving props
 PRODUCT_PROPERTY_OVERRIDES += \
