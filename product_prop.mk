@@ -41,6 +41,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # IORap
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.iorapd.enable=true
+   persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
