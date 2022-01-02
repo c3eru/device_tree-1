@@ -1,11 +1,15 @@
 # blurs
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.supports_background_blur=0 \
-    ro.sf.blurs_are_expensive=0
+    ro.surface_flinger.supports_background_blur=1 \
+    ro.sf.blurs_are_expensive=1
 
 # Dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
+
+# DRM
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
