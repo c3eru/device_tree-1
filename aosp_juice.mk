@@ -12,6 +12,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Target
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_juice
