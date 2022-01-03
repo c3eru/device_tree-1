@@ -43,6 +43,18 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.iorapd.enable=true
    persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
+# LMKD
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.psi_complete_stall_ms=150 \
+    ro.lmk.low=1001 \
+    ro.lmk.medium=800 \
+    ro.lmk.critical=0 \
+    ro.lmk.critical_upgrade=false \
+    ro.lmk.upgrade_pressure=100 \
+    ro.lmk.downgrade_pressure=100 \
+    ro.lmk.swap_free_low_percentage=20
+
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=25 \
