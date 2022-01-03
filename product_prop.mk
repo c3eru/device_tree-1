@@ -18,18 +18,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.hwui.renderer=opengl \
-    debug.egl.hw=1 \
-    debug.egl.force.msaa=1 \
+    debug.hwui.renderer=skiagl \
+    debug.renderengine.backend=skiaglthreaded \
+    renderthread.skia.reduceopstasksplitting=true \
     debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \
-    ro.surface_flinger.running_without_sync_framework=true \
+    debug.sf.disable_backpressure=1 \
+    debug.sf.disable_hwc_overlays=1 \
+    debug.sdm.support_writeback=0 \
+    debug.enable.sglscale=1 \
+    debug.egl.hw=1 \
+    debug.egl.force_msaa=1 \
+    debug.mdpcomp.logs=0 \
+    debug.sf.recomputecrop=0 \
+    vendor.display.disable_rotator_downscale=1 \
+    ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.use_context_priority=true \
     ro.surface_flinger.has_wide_color_display=false \
-    debug.sf.disable_backpressure=1 \
     ro.hardware.egl=adreno \
-    ro.hardware.vulkan=adreno \
-    vendor.display.disable_rotator_downscale=1
+    ro.hardware.vulkan=adreno
 
 # IORap
 PRODUCT_PRODUCT_PROPERTIES += \
