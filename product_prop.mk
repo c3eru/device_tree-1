@@ -57,3 +57,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true \
     persist.device_config.configuration.disable_rescue_party=true
+
+# Gboard
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.com.google.ime.silk_theme=true
+ro.com.google.ime.pill_shaped_key=true
+ro.com.google.ime.enable_keyboard_redesign=true
+ro.com.google.ime.use_keyboard_redesign_theme_by_default=true
+ro.com.google.ime.kb_pad_port_r=11.0
+ro.com.google.ime.kb_pad_port_l=11.0
+ro.com.google.ime.themed_nav_bar_style=2
