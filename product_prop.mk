@@ -21,7 +21,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.has_wide_color_display=false \
     debug.sf.disable_backpressure=1 \
     ro.hardware.egl=adreno \
-    ro.hardware.vulkan=adreno
+    ro.hardware.vulkan=adreno \
+    vendor.display.disable_rotator_downscale=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
