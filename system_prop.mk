@@ -44,7 +44,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.critical_upgrade=false \
     ro.lmk.upgrade_pressure=100 \
     ro.lmk.downgrade_pressure=100 \
-    ro.lmk.swap_free_low_percentage=20 
+    ro.lmk.swap_free_low_percentage=20
 
 # Netflix custom property
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -59,7 +59,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Zygote
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
-    
+
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.charger.enable_suspend=true
