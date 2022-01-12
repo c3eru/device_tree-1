@@ -155,19 +155,5 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor-overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION))
 
-PRODUCT_PACKAGES += \
-    AospFrameworkResOverlay \
-    AospWifiResOverlay \
-    CarrierConfigResCommon \
-    CellBroadcastReceiverResCommon \
-    FrameworksResCommon \
-    FrameworksResTarget \
-    GmsTelecommOverlay \
-    GmsTelephonyOverlay \
-    SystemUIResCommon \
-    TelecommResCommon \
-    TelephonyResCommon \
-    WifiResCommon
-
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
