@@ -7,7 +7,7 @@
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Target
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
