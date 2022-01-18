@@ -9,8 +9,6 @@ DEVICE_PATH := device/xiaomi/juice
 # Broken R
 BUILD_BROKEN_DUP_RULES := true
 
-# Platform
-TARGET_BOARD_PLATFORM := sm6115
 
 # Architecture
 TARGET_ARCH := arm64
